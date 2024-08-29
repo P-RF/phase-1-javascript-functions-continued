@@ -12,12 +12,12 @@ function mondayWork(activity = "go to the office") {
 }
 
 // Define wrapAdjective function
-function wrapAdjective(style = '*') {
+function wrapAdjective(special = '*') {
     return function(adjective) {
-        if (style === '*') {
-            return `You are ${style}${adjective}${style}!`;
-        }   else if (style === '||') {
-            return `You are ${style}${adjective}${style}!`;
+        if (special === '*') {
+            return `You are ${special}${adjective}${special}!`;
+        }   else if (special === '||') {
+            return `You are ${special}${adjective}${special}!`;
         }
     }
 }
